@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:slideshow="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/baseColor"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:clickable="true">
+
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/menu" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:gravity="top"
+     >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/HeaderProgressImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <ProgressBar
+                        android:id="@+id/pbHeaderProgressImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ProgressBar>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ImageChange"
+                    android:scaleType="centerInside"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linlaHeaderProgress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <ProgressBar
+                        android:id="@+id/pbHeaderProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ProgressBar>
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/list_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/lightGrayBackground"
+                    android:verticalSpacing="1dp">
+
+                </ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BitBit</string>
+    <string name="alertConnection">ارتباط با سایت برقرار نمی باشد.</string>
+    <string name="reConnect">بررسی مجدد</string>
+</resources>

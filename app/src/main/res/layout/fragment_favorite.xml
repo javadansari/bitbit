@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:slideshow="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/baseColor"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:clickable="true">
+
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/menu" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/withe"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider"></LinearLayout>
+
+            <CustomViews.CustomButtonBold
+                android:id="@+id/btn_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/withe"
+                android:text="فیلتر"
+                android:enabled="false"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider"></LinearLayout>
+
+            <CustomViews.CustomButtonBold
+                android:id="@+id/btn_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/withe"
+                android:text="گالری"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@color/divider"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_change_grid"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/gridHeaderProgress"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ProgressBar
+                    android:id="@+id/gridProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ProgressBar>
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/list_gallery_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/lightGrayBackground"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/lightGrayBackground"
+                android:numColumns="2"
+                android:paddingTop="1dp"
+                android:stretchMode="columnWidth"
+                android:scaleType="centerCrop"
+                android:verticalScrollbarPosition="left"
+                android:verticalSpacing="1dp">
+
+            </GridView>
+
+            <GridView
+                android:id="@+id/list_gallery_grid_second"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/lightGrayBackground"
+                android:clickable="true"
+                android:focusable="false"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:listSelector="@color/lightGrayBackground"
+                android:numColumns="1"
+                android:paddingTop="1dp"
+                android:stretchMode="columnWidth"
+                android:verticalScrollbarPosition="left"
+                android:verticalSpacing="1dp">
+
+            </GridView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
